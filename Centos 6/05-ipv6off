@@ -1,0 +1,15 @@
+#!/bin/bash
+
+# Disable ipv6 via sysctl
+echo "net.ipv6.conf.all.disable_ipv6 = 1" > /etc/sysctl.conf
+echo "net.ipv6.conf.default.disable_ipv6 = 1" >> /etc/sysctl.conf
+
+# Disable ipv6 in network settings
+echo "NETWORKING_IPV6=no" > /etc/sysconfig/network
+
+# Reload sysctl
+sysctl -p
+
+# Disable ipv6 iptables
+## chkconfig ip6tables off
+chkconfig ip6tables off
