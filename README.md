@@ -8,4 +8,5 @@ Custom contextualization scripts.
 * Forced root password change after first login (via `init.sh`) 
 * Self-removing directories `/etc/one-context.d/` & `/tmp/one-context-tmp` after executing all scripts onf VM. (via `init.sh`)
 
-Coming soon...
+
+Gentoo and Win coming soon...
