@@ -1,4 +1,0 @@
-#!/bin/bash
-
-# Force change password for root on 1st login
-chage -d 0 root
